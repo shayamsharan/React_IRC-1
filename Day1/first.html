@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Amazon</title>
+</head>
+
+<body>
+    
+    <form class="container shadow" onsubmit="loginx()">
+        <h1 class="mentoion">
+           LOGIN
+        </h1>
+        <input type="text" name="Username" id="username" placeholder="Name" class="input">
+        <input type="password" name="Password" id="pwd1" placeholder="Enter Password" class="input">
+        <input type="submit" value="Login" class="btw">
+
+    </form>
+    
+</body>
+<script>
+    function loginx() {
+
+        let x = document.getElementById("username").value;
+        let pwd = document.getElementById("pwd1").value;
+        let pwd2 = "12345678"
+        if (pwd == pwd2) {
+            alert("Login Successful")
+        }
+        else {
+            alert("Login failed")
+        }
+    }
+</script>
+
+</html>

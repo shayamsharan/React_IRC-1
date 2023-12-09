@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Login.css">
+    <title>Amazon</title>
+</head>
+<body>
+    
+    <form class="container shadow" onsubmit="register()">
+        <h1 class="mentoion">
+            REGISTER
+        </h1>
+        <input type="text" name="Username" id="username"placeholder="Name" class="input">
+        <input type="password" name="Password" id="pwd1" placeholder="Enter Password"class="input">
+        <input type="password" name="Password" id="pwd2" placeholder="Confirm PAssword"class="input">
+        <input type="email" name="Enter Mail ID" id=""placeholder="Email"class="input">
+        <input type="number" name="Contact Number" id=""placeholder="Mobile Number"class="input">
+        <input type="number" name="Age" id=""placeholder="Age"class="input">
+        <input type="submit" value="Register"class="btw">
+    
+</form>
+
+</body>
+<script>
+    function register()
+    {
+       
+        let pwd = document.getElementById("pwd1").value;  
+        let pdw = document.getElementById("pwd2").value; 
+        if(confirm("Click YES to check password"))
+        {
+        if(pwd==pdw)
+        {
+            alert("Matched")
+        } 
+        else
+        {
+            alert("Not Matched")
+        }
+    }
+    else{
+        alert("failed")
+    }
+    }
+</script>
+</html>
