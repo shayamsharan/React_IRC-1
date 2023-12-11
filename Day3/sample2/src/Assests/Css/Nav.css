@@ -1,0 +1,33 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color:rgb(201, 197, 197)
+   
+}
+
+  
+
+  /* new  */
+  .nav{
+    display: grid;grid-template-columns: repeat(4,1fr);
+    background-color: #000;
+    height: 50px;
+    padding: 20px;
+    width: 100%;
+   
+  }
+  .nav-items{
+    display: flex;
+    margin-left: 200px;
+    
+}
+a{
+    color: white;
+      text-decoration: none;
+
+  }
+ 
