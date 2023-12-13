@@ -12,14 +12,16 @@ const Home = () => {
 
               <ul className="nav">
 
-                  <li>  <img src={img1} className="fly" />
-                  </li>
+             
 
                   {/* <button type="submit" className="diff">
       <a href="./First Emirates.html">Home</a>
     </button> */}
 
 
+                  <li>
+                  <img src={img1}  className="logo"/>
+                  </li>
                   <li>
                       <a href="#" className="same">
                           HOME
@@ -30,16 +32,7 @@ const Home = () => {
                           CONTACT
                       </a>
                   </li>
-                  <li>
-                      <a href="#" className="same">
-                          EXPERIENCE
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" className="same">
-                          ABOUT US
-                      </a>
-                  </li>
+                 
                   <li>
                       <a href="#" className="same">
                           SIGN UP
@@ -48,6 +41,11 @@ const Home = () => {
                   <li>
                       <a href="#" className="same">
                           LOGIN
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" className="same">
+                          ABOUT US
                       </a>
                   </li>
 
@@ -62,15 +60,35 @@ const Home = () => {
           <div>
 
           </div>
-          {/* <img src={img1} className="fly" /> */}
+        
 
           <div className="text">
-              <h1>Welcome to Emirates Airlines</h1>
+              <h1>Welcome to Emirates</h1>
 
           </div>
-         
+          <div className="single">
+<a href="https://www.mythrillfiction.com/the-dark-rider" alt="Mythrill" target="_blank">
+  <div class="card">
+    <div class="wrapper">
+      <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-cover.jpg" class="cover-image" />
+    </div>
+    <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-title.png" class="title" />
+    <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-character.webp" class="character" />
+  </div>
+</a>
 
-        <center><img src={img3}  className="crew"/></center>
+<a href="https://www.mythrillfiction.com/force-mage" alt="Mythrill" target="_blank">
+  <div class="card">
+    <div class="wrapper">
+      <img src="https://ggayane.github.io/css-experiments/cards/force_mage-cover.jpg" class="cover-image" />
+    </div>
+    <img src="https://ggayane.github.io/css-experiments/cards/force_mage-title.png" class="title" />
+    <img src="https://ggayane.github.io/css-experiments/cards/force_mage-character.webp" class="character" />
+  </div>
+</a>
+</div>
+
+        {/* <center><img src={img3}  className="crew"/></center> */}
           <hr />
           <h2 className="last">© Copyright Emirates 2023</h2>
           <script src="app.js"></script>
