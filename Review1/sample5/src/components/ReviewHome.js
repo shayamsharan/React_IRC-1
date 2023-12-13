@@ -1,65 +1,67 @@
 
 import '../Assests/CSS/ReviewHome.css';
-// import img1 from '../Assests/Image/Emirates-Logo.png';
+
 import favicon from '../Assests/Image/favicon.ico';
 import img3 from '../Assests/Image/Crew.jpg'
-import final from '../Assests/Image/Furniture.jpg';
+import img2 from '../Assests/Image/Furniture.jpg';
 import last from '../Assests/Image/Bedroom.jpg';
+import { Link } from 'react-router-dom';
+
 
 
 const Home = () => {
-  return (
-    <div style={{ backgroundColor: 'white' }}>
-          <nav>
+    return (
+        <div style={{ backgroundColor: 'white' }}>
+            <nav>
 
-              <ul className="nav">
+                <ul className="nav">
 
-             
+                    <li>
+                        <img src={img2} className="logo" />
+                    </li>
+                    <Link to='/home'>                 
+                     <li>
+                    
+                       
+                        HOME
+                        
+                        
+                    </li>
+                    </Link>
 
-                  {/* <button type="submit" className="diff">
-      <a href="./First Emirates.html">Home</a>
-    </button> */}
+                    <li>
+                      
+                        CONTACT
+                       
+                    </li>
+<Link to='/signup'>
+                    <li>
+                        <a href="#" className="same">
+                            SIGN UP
+                        </a>
+                    </li>
+                    </Link>
+                    <Link to="/login">
+                    <li>
+                        <a href="#" className="same">
+                            LOGIN
+                        </a>
+                    </li>
+                    </Link>
+                    <li>
+                        <a href="#" className="same">
+                            ABOUT US
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
 
-                  <li>
-                  <img src={final}  className="logo"/>
-                  </li>
-                  <li>
-                      <a href="#" className="same">
-                          HOME
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" className="same">
-                          CONTACT
-                      </a>
-                  </li>
-                 
-                  <li>
-                      <a href="#" className="same">
-                          SIGN UP
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" className="same">
-                          LOGIN
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" className="same">
-                          ABOUT US
-                      </a>
-                  </li>
-                  </ul>
-</nav>
-                  {/* <div className='bg'>
-                    <img src={last}a/>
-                  </div> */}
 
-</div>
-  
-     
-  )
+        </div>
+
+
+    )
 }
 
 export default Home;
