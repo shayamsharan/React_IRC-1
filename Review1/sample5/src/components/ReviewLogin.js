@@ -2,7 +2,7 @@ import'../Assests/CSS/ReviewLogin.css'
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
-import final from '../Assests/Image/Furniture.jpg';
+
 
 const Login = () => {
 
@@ -25,7 +25,8 @@ const logx=(e)=>
   if(a===data.email && b===data.password)
   {
       
-          navigate('/home');
+          navigate('/dashboard');
+         
   }
   else
       alert('Invalid Credentials');
@@ -48,9 +49,7 @@ const logx=(e)=>
          
 
 
-          <li>
-          <img src={final}  className="logo"/>
-          </li>
+        
           <li>
               <a href="#" className="same">
                   HOME
