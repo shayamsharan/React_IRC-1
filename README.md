@@ -1,1 +1,1 @@
-![Screenshot 2](.gitbook/assets/Screenshot-2023-12-15-182722.png)
+![Screenshot 2](https://github.com/Saran8178/React_IRC/blob/main/.gitbook/assets/Screenshot%202023-12-15%20182722.png)
