@@ -35,56 +35,35 @@ const Signin = () => {
     return (
     
 <div>
-      <nav>
+<nav>
+        <ul className="nav">
+          
+          <li>
+            <Link to='/'>HOME</Link>
+          </li>
+          <li>
+            <Link to='/contact'>CONTACT</Link>
+          </li>
+          <li>
+            <Link to='/signup' className="same">SIGN UP</Link>
+          </li>
+          <li>
+            <Link to="/login" className="same">LOGIN</Link>
+          </li>
+          <li>
+            <a href="#" className="same">ABOUT US</a>
+          </li>
+        </ul>
 
-      <ul className="nav">
-
-     
-
-          {/* <button type="submit" className="diff">
-<a href="./First Emirates.html">Home</a>
-</button> */}
-
-
-          <li>
-          <img src={final}  className="logo"/>
-          </li>
-          <li>
-              <a href="#" className="same">
-                  HOME
-              </a>
-          </li>
-          <li>
-              <a href="#" className="same">
-                  CONTACT
-              </a>
-          </li>
-         
-          <li>
-              <a href="#" className="same">
-                  SIGN UP
-              </a>
-          </li>
-          <li>
-              <a href="#" className="same">
-                  LOGIN
-              </a>
-          </li>
-          <li>
-              <a href="#" className="same">
-                  ABOUT US
-              </a>
-          </li>
-          </ul>
-</nav>
-    <div class="main">
+      </nav>
+    {/* <div class="main"> */}
       <div class="container1">
       <div class="logo">
       </div>
-        <div class="first">
+        {/* <div class="first">
           <h1>Hey there,</h1>
           <p class="sub">Enter your email and password to login</p>
-        </div>
+        </div> */}
         <form name="form2" method="post" action="#"  class="form-control" onSubmit={Reg} >
             <label for="username">Username</label>
             <input type="text" id="username" placeholder="Enter your name" name="username" onChange={HandleChange} />
@@ -105,14 +84,11 @@ const Signin = () => {
         </form>
       </div>
       
-      {/* <div class="second">
-        <img src="https://images.furnituredealer.net/img/collections/best_home_furnishings/emeline_custom-lss-b4.jpg"  className="gang"/>
-        
-      </div> */}
+      
   </div>
   
-  </div>
-    // width="100%" height="100%"
+  // </div>
+   
 
 
 

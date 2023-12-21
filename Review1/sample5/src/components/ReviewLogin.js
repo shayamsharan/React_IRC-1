@@ -1,6 +1,10 @@
 import'../Assests/CSS/ReviewLogin.css'
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import Addashboard from './AdDashboard';
+import Nav from './Nav';
+import Button from '@mui/material/Button';
 
 
 
@@ -40,53 +44,13 @@ const logx=(e)=>
     return (
     
 <div>
-      <nav>
-
-      <ul className="nav">
-
-     
-
-         
-
-
-        
-          <li>
-              <a href="#" className="same">
-                  HOME
-              </a>
-          </li>
-          <li>
-              <a href="#" className="same">
-                  CONTACT
-              </a>
-          </li>
-         
-          <li>
-              <a href="#" className="same">
-                  SIGN UP
-              </a>
-          </li>
-          <li>
-              <a href="#" className="same">
-                  LOGIN
-              </a>
-          </li>
-          <li>
-              <a href="#" className="same">
-                  ABOUT US
-              </a>
-          </li>
-          </ul>
-</nav>
-    <div class="main">
+<Nav/>
+    {/* <div class="main"> */}
       <div class="container1">
       <div class="logo">
       </div>
-        <div class="first">
-          <h1>Hey there,</h1>
-          <p class="sub">Enter your email and password to login</p>
-        </div>
-        <form class="form-control" onSubmit={logx}>
+        
+       <center> <form class="form-control" onSubmit={logx}>
             <label for="email">Email</label>
             <input type="email" id="email" placeholder="Enter your email" name="Email"onChange={HandleChange} />
           
@@ -101,13 +65,17 @@ const logx=(e)=>
          <button class="enter" type="submit" >Login</button >
           
         
-        </form>
-      </div>
+        </form></center>
+        <Link to={"/Addashboard"}>
+        <Button variant="text">Admin</Button>
+        </Link>
+    
       
       
-  </div>
-  </div>
-    // width="100%" height="100%"
+  // </div>
+
+// </div>
+
 
    )
    }
