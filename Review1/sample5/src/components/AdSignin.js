@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import'../Assests/CSS/AdSignin.css'
+import'../Assests/CSS/ReviewSignin.css'
 // import img3 from '../Assests/Image/Sofa.jpg'
 import final from '../Assests/Image/Furniture.jpg';
 import { useNavigate } from 'react-router-dom';
@@ -23,7 +23,7 @@ const AdSignin = () => {
           localStorage.setItem('uname',data.username);
           localStorage.setItem('email',data.email)
           localStorage.setItem('pass',data.password);
-          navigate('/login');
+          navigate('/AdLogin');
 
       }
     
@@ -48,7 +48,7 @@ const AdSignin = () => {
             <Link to='/signup' className="same">SIGN UP</Link>
           </li>
           <li>
-            <Link to="/login" className="same">LOGIN</Link>
+            <Link to="/AdLogin" className="same">LOGIN</Link>
           </li>
           <li>
             <a href="#" className="same">ABOUT US</a>
@@ -56,14 +56,11 @@ const AdSignin = () => {
         </ul>
 
       </nav>
-    <div class="main">
+    {/* <div class="main"> */}
       <div class="container1">
       <div class="logo">
       </div>
-        <div class="first">
-          <h1>Hey there,</h1>
-          <p class="sub">Enter your email and password to login</p>
-        </div>
+       
         <form name="form2" method="post" action="#"  class="form-control" onSubmit={Reg} >
             <label for="username">Username</label>
             <input type="text" id="username" placeholder="Enter your name" name="username" onChange={HandleChange} />
@@ -84,14 +81,11 @@ const AdSignin = () => {
         </form>
       </div>
       
-      {/* <div class="second">
-        <img src="https://images.furnituredealer.net/img/collections/best_home_furnishings/emeline_custom-lss-b4.jpg"  className="gang"/>
-        
-      </div> */}
+      
   </div>
   
-  </div>
-    // width="100%" height="100%"
+  // </div>
+   
 
 
 

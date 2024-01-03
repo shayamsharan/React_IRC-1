@@ -1,13 +1,15 @@
-import'../Assests/CSS/AdminLogin.css';
+import'../Assests/CSS/ReviewLogin.css'
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Addashboard from './AdDashboard';
+// import Addashboard from './AdDashboard';
 import Nav from './Nav';
+import Button from '@mui/material/Button';
 
 
 
-const Login = () => {
+
+const AdLogin = () => {
 
 
 
@@ -28,7 +30,7 @@ const logx=(e)=>
   if(a===data.email && b===data.password)
   {
       
-          navigate('/dashboard');
+          navigate('/Addashboard');
          
   }
   else
@@ -44,15 +46,13 @@ const logx=(e)=>
     
 <div>
 <Nav/>
-    <div class="main">
+
       <div class="container1">
+        {/* <h3>ADMIN LOGIN</h3> */}
       <div class="logo">
       </div>
-        <div class="first">
-          <h1>Hey there,</h1>
-          <p class="sub">Enter your email and password to login</p>
-        </div>
-        <form class="form-control" onSubmit={logx}>
+        
+       <center> <form class="form-control" onSubmit={logx}>
             <label for="email">Email</label>
             <input type="email" id="email" placeholder="Enter your email" name="Email"onChange={HandleChange} />
           
@@ -67,20 +67,16 @@ const logx=(e)=>
          <button class="enter" type="submit" >Login</button >
           
         
-        </form>
-        <Link to={"/Addashboard"}>
-        <button >
-                       Admin
-                    </button>
-        </Link>
-      </div>
+        </form></center>
+      
+    
       
       
-  </div>
+  // </div>
 
-</div>
+// </div>
 
 
    )
    }
-   export default Login;
+   export default AdLogin;

@@ -2,9 +2,11 @@ import'../Assests/CSS/ReviewLogin.css'
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Addashboard from './AdDashboard';
+// import Addashboard from './AdDashboard';
 import Nav from './Nav';
 import Button from '@mui/material/Button';
+import AdSignin from './AdSignin';
+import Addashboard from './AdDashboard';
 
 
 
@@ -29,7 +31,7 @@ const logx=(e)=>
   if(a===data.email && b===data.password)
   {
       
-          navigate('/dashboard');
+          navigate('/AdDashboard');
          
   }
   else
@@ -66,7 +68,7 @@ const logx=(e)=>
           
         
         </form></center>
-        <Link to={"/Addashboard"}>
+        <Link to={"/AdSignin"}>
         <Button variant="text">Admin</Button>
         </Link>
     

@@ -35,7 +35,7 @@ export default function Dashboard() {
           <Typography variant="h4" component="div">
             {title}
           </Typography>
-        
+
           <CardMedia component="img" height="140" alt={`Image for ${title}`} src={imageSrc} />
         </CardContent>
       </Card>
@@ -128,7 +128,7 @@ export default function Dashboard() {
             color="primary"
             fullWidth
             onClick={handleClick}
-            style={{ backgroundColor: 'grey' ,display:'flex',justifyContent:'end'}}
+            style={{ backgroundColor: 'grey', display: 'flex', justifyContent: 'end' }}
           >
             Logout
           </Button>
@@ -144,8 +144,8 @@ export default function Dashboard() {
   return (
     <ThemeProvider theme={blackTheme}>
       <CssBaseline />
-      <Box sx={{ display: 'flex',paddingLeft:50 ,height:6}}>
-      <AppBar position="fixed" style={{ width: '100%' }}>
+      <Box sx={{ display: 'flex', paddingLeft: 50, height: 6 }}>
+        <AppBar position="fixed" style={{ width: '100%' }}>
           <Toolbar>
             {/* Removed IconButton and replaced with Typography */}
             <Typography
@@ -169,7 +169,7 @@ export default function Dashboard() {
         </AppBar>
         <Sidebar onSelect={handleSidebarSelect} />
         <Grid container spacing={2} sx={{ marginTop: 8, padding: 2, justifyContent: 'center' }}>
-       
+
           <CustomCard
             to="/sofa"
             title="SOFA"
@@ -187,13 +187,13 @@ export default function Dashboard() {
           <CustomCard
             to="/bed"
             title="BED"
-            
+
             imageSrc="https://cdn.picpng.com/bed/bed-hd-34654.png"
           />
           <CustomCard
             to="/chair"
             title="CHAIR"
-           
+
             imageSrc="https://wallpapercave.com/wp/wp7430921.jpg"
           />
           {/* Add more custom cards as needed */}
